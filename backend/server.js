@@ -19,7 +19,7 @@ const postRoutes = require('./routes/posts'); // 👈 ADD THIS
 app.use('/api/posts', postRoutes);            // 👈 AND THIS
 
 // ✅ Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.MONGO_URL)
   .then(() => console.log("MongoDB connected"))
   .catch(err => console.error(err));
 
