@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import PostForm from './PostForm';
-import jwtDecode from 'jwt-decode';
+import { jwtDecode } from 'jwt-decode'; // ✅ corrected here
 
 const PostFeed = () => {
   const [posts, setPosts] = useState([]);
